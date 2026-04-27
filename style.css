@@ -1,0 +1,75 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fdf4; /* ACNH Grass Green tint */
+    margin: 0;
+    color: #4a4a4a;
+}
+
+
+.skip-link {
+    position: absolute;
+    top: -100px; /* Hide off-screen */
+    left: 0;
+    background: #e97451;
+    color: white;
+    padding: 10px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0; /* Show on focus */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #79c6a4;
+    padding: 1rem;
+    border-bottom: 5px solid #5da386;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background 0.3s; /* Smooth hover transition */
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #79c6a4;
+    transform: scale(1.1); /* Hover "interesting" effect */
+}
+
+
+img {
+    border: 4px solid #8db35c;
+    padding: 10px;
+    border-radius: 25px;
+    max-width: 100%;
+}
+
+.villager-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* At least two columns */
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* Every second image gets a different border shape */
+.villager-grid img:nth-child(even) {
+    border-radius: 50px 0px 50px 0px;
+    border-color: #e9c46a;
+}
+
+
+.gallery-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
